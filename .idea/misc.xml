@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Irfan (skole)/AndroidStudioProjects/RESEP4_Android/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Irfan (skole)/AndroidStudioProjects/RESEP4_Android/app/src/main/res/layout/activity_office.xml" value="0.25" />
         <entry key="..\:/Users/Irfan (skole)/AndroidStudioProjects/RESEP4_Android/app/src/main/res/layout/fragment_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/Irfan (skole)/AndroidStudioProjects/RESEP4_Android/app/src/main/res/layout/fragment_sign_out.xml" value="0.1" />
         <entry key="..\:/Users/Irfan (skole)/AndroidStudioProjects/RESEP4_Android/app/src/main/res/layout/fragment_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/Irfan (skole)/AndroidStudioProjects/RESEP4_Android/app/src/main/res/layout/office.xml" value="0.25" />
+        <entry key="..\:/Users/Irfan (skole)/AndroidStudioProjects/RESEP4_Android/app/src/main/res/layout/recycler_row.xml" value="0.2359375" />
+        <entry key="..\:/Users/Irfan (skole)/AndroidStudioProjects/RESEP4_Android/app/src/main/res/layout/recyclerview_offices.xml" value="0.25" />
       </map>
     </option>
   </component>
