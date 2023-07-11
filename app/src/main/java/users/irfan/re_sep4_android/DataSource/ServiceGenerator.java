@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceGenerator {
 
-    public static String BASE_URL = "https://localhost:44325/api/Offices/";
+    public static String BASE_URL = "https://localhost:44325/";
 
     public static Retrofit retrofit;
 

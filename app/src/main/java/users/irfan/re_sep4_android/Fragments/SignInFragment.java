@@ -1,5 +1,6 @@
 package users.irfan.re_sep4_android.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,7 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseUser;
 
+import users.irfan.re_sep4_android.Activity.OfficesActivity;
 import users.irfan.re_sep4_android.R;
 import users.irfan.re_sep4_android.ViewModel.AuthViewModel;
 
@@ -78,6 +80,8 @@ public class SignInFragment extends Fragment {
 
                 if(!email.isEmpty() && !password.isEmpty()){
                     viewModel.signIn(email, password);
+                    Intent intent = new Intent(requireContext(), OfficesActivity.class);
+                    startActivity(intent);
                 }
             }
         });
