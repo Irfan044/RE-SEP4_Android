@@ -59,6 +59,8 @@ public class OfficesActivity extends AppCompatActivity implements OfficeListAdap
     @Override
     public void onOfficeClick(OfficeModel office) {
         Toast.makeText(this, "Selected Office Name is: " +office.getName(), Toast.LENGTH_SHORT).show();
-        //Show temperature
+        Toast.makeText(this, "Temperature of selected office is: " +office.getTemperature(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Temperature of selected office is: " +office.getRH(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Temperature of selected office is: " +office.getCO2(), Toast.LENGTH_SHORT).show();
     }
 }

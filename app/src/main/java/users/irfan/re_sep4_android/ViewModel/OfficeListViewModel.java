@@ -26,7 +26,7 @@ public class OfficeListViewModel extends ViewModel {
         }
 
         public void makeApiCall(){
-                APIService apiService = ServiceGenerator.getRetroClient().create(APIService.class);
+                APIService apiService = ServiceGenerator.getApiService();
                 Call<List<OfficeModel>> call = apiService.getOfficeList();
                 call.enqueue(new Callback<List<OfficeModel>>() {
                         @Override

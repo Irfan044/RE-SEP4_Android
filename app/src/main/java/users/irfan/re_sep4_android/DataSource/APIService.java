@@ -8,7 +8,7 @@ import users.irfan.re_sep4_android.Model.OfficeModel;
 
 public interface APIService {
 
-    @GET("/api/Offices/GetAllOffices")
+    @GET("api/Offices/GetAllOffices")
     Call<List<OfficeModel>> getOfficeList();
 
 }
