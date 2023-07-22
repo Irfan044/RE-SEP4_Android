@@ -14,30 +14,30 @@ import users.irfan.re_sep4_android.Model.OfficeModel;
 
 public class OfficeListViewModel extends ViewModel {
 
-    private MutableLiveData<List<OfficeModel>> officesList;
+        private MutableLiveData<List<OfficeModel>> officesList;
 
-    public OfficeListViewModel(){
-        officesList = new MutableLiveData<>();
-    }
+        public OfficeListViewModel(){
+                officesList = new MutableLiveData<>();
+        }
 
-    public MutableLiveData<List<OfficeModel>> getOfficesListObserver(){
-        return officesList;
+        public MutableLiveData<List<OfficeModel>> getOfficesListObserver(){
+                return officesList;
 
-    }
+        }
 
-    public void makeApiCall(){
-        APIService apiService = ServiceGenerator.getRetroClient().create(APIService.class);
-        Call<List<OfficeModel>> call = apiService.getOfficeList();
-        call.enqueue(new Callback<List<OfficeModel>>() {
-            @Override
-            public void onResponse(Call<List<OfficeModel>> call, Response<List<OfficeModel>> response) {
-                officesList.postValue(response.body());
-            }
+        public void makeApiCall(){
+                APIService apiService = ServiceGenerator.getRetroClient().create(APIService.class);
+                Call<List<OfficeModel>> call = apiService.getOfficeList();
+                call.enqueue(new Callback<List<OfficeModel>>() {
+                        @Override
+                        public void onResponse(Call<List<OfficeModel>> call, Response<List<OfficeModel>> response) {
+                                officesList.postValue(response.body());
+                        }
 
-            @Override
-            public void onFailure(Call<List<OfficeModel>> call, Throwable t) {
-                officesList.postValue((null));
-            }
-        });
-    }
+                        @Override
+                        public void onFailure(Call<List<OfficeModel>> call, Throwable t) {
+                                officesList.postValue((null));
+                        }
+                });
+        }
 }
