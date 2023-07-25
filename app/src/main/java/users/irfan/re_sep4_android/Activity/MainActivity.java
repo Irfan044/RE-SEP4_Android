@@ -1,8 +1,10 @@
-package users.irfan.re_sep4_android;
+package users.irfan.re_sep4_android.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import users.irfan.re_sep4_android.R;
 
 public class MainActivity extends AppCompatActivity {
 

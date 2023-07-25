@@ -37,7 +37,6 @@ public class AuthenticationRepository {
         }
     }
 
-    //password is called pass in tutorial
     public void register(String email, String password){
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
